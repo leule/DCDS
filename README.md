@@ -1,5 +1,5 @@
 ##  Deep Constrained Dominant Sets for Person Re-Identification [(DCDS)](https://www.crcv.ucf.edu/wp-content/uploads/2019/08/Publications_Deep-Constrained-Dominant-Sets-for-Person-Re-Identification.pdf)
-Pytorch Implementation for our ICCV2019 work, Deep Constrained Dominant Sets for Person Re-Identification.
+Pytorch Implementation for our **ICCV2019** work, Deep Constrained Dominant Sets for Person Re-Identification.
 This implementation is based on [open-reid](https://github.com/Cysu/open-reid) and [kpm_rw_person_reid.](https://github.com/YantaoShen/kpm_rw_person_reid)
 
 ### Requirements 
