@@ -35,7 +35,7 @@ Repeate this for CUHK03 and Dukemtmc.
 -d market1501 -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/market1501-final-model
 ```
 ```
---d dukemtmc -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/dukemtmc-final-model
+-d dukemtmc -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/dukemtmc-final-model
 ```
 
 - Same for CUHK03
@@ -43,6 +43,8 @@ Repeate this for CUHK03 and Dukemtmc.
 ### Testing
 ```
 -d market1501 -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/market1501-final-model/checkpoint.pth.tar
+
+-d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/checkpoint.pth.tar
 ```
 
 
