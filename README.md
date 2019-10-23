@@ -8,12 +8,13 @@ This implementation is based on Oper Reid and kpm_rw_person_reid
 * metric-learn 0.3.0
 * torchvision 0.2.1
 
-
-- Cd DCDS
+```shell 
+- cd DCDS
 - install setup.py
+```
 
 
-For single dataset (SD) setup we use Market1501, CUHK03, and DukeMTMC datasets.
+For single dataset (SD) setup we use [Market1501](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view), [CUHK03](//docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dHRkMkFVSUFvbTJIRkRDLWRwZWpONnc6MA#gid=0), and [DukeMTMC](https://drive.google.com/uc?id=0B0VOCNYh8HeRdnBPa2ZWaVBYSVk) datasets.
 ### Download and extract these datasets and do,
 ```shell 
 cd examples/
@@ -41,10 +42,14 @@ Repeate this for CUHK03 and Dukemtmc.
 - Same for CUHK03
 
 ### Testing
+Download our models
+* Market1501
+* DukeMTMC
+* CUHK03
 ```
--d market1501 -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/market1501-final-model/checkpoint.pth.tar
+-d market1501 -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/market1501-final-model/model_best.pth.tar
 
--d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/checkpoint.pth.tar
+-d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/model_best.pth.pth.tar
 ```
 
 
