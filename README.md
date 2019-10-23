@@ -15,7 +15,7 @@ This implementation is based on Oper Reid and kpm_rw_person_reid
 
 For single dataset (SD) setup we use Market1501, CUHK03, and DukeMTMC datasets.
 ### Download and extract these dataset,
-
+```shell 
 cd examples/
 mkdir data
 cd data/
@@ -23,7 +23,7 @@ mkdir market1501
 cd market1501
 mkdir raw/
 mv dir_of_market1501_zip raw/
-
+```
 Repeate this for Market1501 and Dukemtmc.
 
 
