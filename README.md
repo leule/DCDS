@@ -1,12 +1,12 @@
 ##  Deep Constrained Dominant Sets for Person Re-Identification (DCDS)
 Pytorch Implementation for our ICCV2019 work called Deep Constrained Dominant Sets for Person Re-Identification
-This implementation is based on Oper Reid and kpm_rw_person_reid
+This implementation is based on [open-reid](https://github.com/Cysu/open-reid) and [kpm_rw_person_reid](https://github.com/YantaoShen/kpm_rw_person_reid)
 
 ### Requirements 
 * python 2.7 
-* PyTorch (we run the code under version 0.3.0)
-* metric-learn 0.3.0
-* torchvision 0.2.1
+* [PyTorch](https://pytorch.org/previous-versions/) (we run the code under version 0.3.0)
+* [metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)  
+* [torchvision 0.2.1](https://pypi.org/project/torchvision/0.2.1/)
 
 ```shell 
 - cd DCDS
@@ -42,10 +42,10 @@ Repeate this for CUHK03 and Dukemtmc.
 - Same for CUHK03
 
 ### Testing
-Download our models
-* Market1501
-* DukeMTMC
-* CUHK03
+Download the trained models
+* [Market1501](https://drive.google.com/file/d/14wYOpiPD7O1ETyqY9d5ABUpWZTNebORB/view?usp=sharing)
+* [DukeMTMC](https://drive.google.com/file/d/1NJV7DOqiwan51W0aPl2OlPwKQPcZVuwB/view?usp=sharing)
+* [CUHK03](https://drive.google.com/file/d/1sqm2Lw18hRP2YH_lZmzM9xLUDfIxbCnM/view?usp=sharing)
 ```
 -d market1501 -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/market1501-final-model/model_best.pth.tar
 
