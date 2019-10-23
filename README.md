@@ -1,9 +1,9 @@
-##  Deep Constrained Dominant Sets for Person Re-Identification (DCDS)
+##  Deep Constrained Dominant Sets for Person Re-Identification [(DCDS)](https://www.crcv.ucf.edu/wp-content/uploads/2019/08/Publications_Deep-Constrained-Dominant-Sets-for-Person-Re-Identification.pdf)
 Pytorch Implementation for our ICCV2019 work called Deep Constrained Dominant Sets for Person Re-Identification
 This implementation is based on [open-reid](https://github.com/Cysu/open-reid) and [kpm_rw_person_reid](https://github.com/YantaoShen/kpm_rw_person_reid)
 
 ### Requirements 
-* python 2.7 
+* [python 2.7](https://www.python.org/download/releases/2.7/) 
 * [PyTorch](https://pytorch.org/previous-versions/) (we run the code under version 0.3.0)
 * [metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)  
 * [torchvision 0.2.1](https://pypi.org/project/torchvision/0.2.1/)
@@ -51,6 +51,39 @@ Download the trained models
 
 -d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/model_best.pth.pth.tar
 ```
+## Results, trained and tested on single dataset (SD) setup.
+<table>
+  <tr>
+    <th></th>
+    <th colspan="3">Market-1501</th>
+    <th colspan="3">CUHK03</th>
+    <th colspan="3">DukeMTMC-reID</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>mAP(%)</th><th>rank-1</th><th>rank-5</th>
+    <th>mAP(%)</th><th>rank-1</th><th>rank-5</th>
+    <th>mAP(%)</th><th>rank-1</th><th>rank-5</th>
+  </tr>
+  <tr>
+    <th>DCDS (SD)</th>
+    <th>81.5</th><th>92.9</th><th>97.4</th>
+    <th>90.7</th><th>93.3</th><th>99.1</th>
+    <th>70.3</th><th>83.6</th><th>90.4</th>
+  </tr>
+ 
+</table>
 
-
-
+## Citation
+```
+@article{DBLP:journals/corr/abs-1904-11397,
+  author    = {Leulseged Tesfaye Alemu and
+               Mubarak Shah and
+               Marcello Pelillo},
+  title     = {Deep Constrained Dominant Sets for Person Re-identification},
+  journal   = {CoRR},
+  volume    = {abs/1904.11397},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1904.11397},
+}
+```
