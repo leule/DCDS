@@ -1,13 +1,13 @@
-#  Deep Constrained Dominant Sets for Person Re-Identification (DCDS)</br></br>
-## Pytorch Implementation for our ICCV2019 work called Deep Constrained Dominant Sets for Person Re-Identification
-```
+##  Deep Constrained Dominant Sets for Person Re-Identification (DCDS)
+Pytorch Implementation for our ICCV2019 work called Deep Constrained Dominant Sets for Person Re-Identification
 This implementation is based on Oper Reid and kpm_rw_person_reid
+
 ### Requirements 
 * python 2.7 
 * PyTorch (we run the code under version 0.3.0)
 * metric-learn 0.3.0
 * torchvision 0.2.1
-```
+
 
 - Cd DCDS
 - install setup.py
