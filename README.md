@@ -81,7 +81,7 @@ python examples/main.py -d dukemtmc -b 64 -a resnet101 --features 2048 --evaluat
                Mubarak Shah and
                Marcello Pelillo},
   title     = {Deep Constrained Dominant Sets for Person Re-identification},
-  journal   = {CoRR},
+  journal   = {arXiv: 1904.11397},
   volume    = {abs/1904.11397},
   year      = {2019},
   url       = {http://arxiv.org/abs/1904.11397},
