@@ -76,7 +76,7 @@ python examples/main.py -d dukemtmc -b 64 -a resnet101 --features 2048 --evaluat
 
 ## Citation
 ```
-@article{DBLP:journals/corr/abs-1904-11397,
+@article{LeulPelilloShahICCV19,
   author    = {Leulseged Tesfaye Alemu and
                Mubarak Shah and
                Marcello Pelillo},
