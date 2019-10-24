@@ -33,10 +33,10 @@ Repeate this for CUHK03 and Dukemtmc.
 
 ### Training
 ```
--d market1501 -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/market1501-final-model
+python examples/main.py -d market1501 -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/market1501-final-model
 ```
 ```
--d dukemtmc -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/dukemtmc-final-model
+python examples/main.py -d dukemtmc -b 64 -a resnet101 --features 2048 --lr 0.0001 --ss 10 --epochs 100 --dropout 0 --weight-decay 0 --logs-dir examples/logs/dukemtmc-final-model
 ```
 
 - Same for CUHK03
@@ -47,9 +47,9 @@ Download the trained models
 * [DukeMTMC](https://drive.google.com/file/d/1NJV7DOqiwan51W0aPl2OlPwKQPcZVuwB/view?usp=sharing)
 * [CUHK03](https://drive.google.com/file/d/1sqm2Lw18hRP2YH_lZmzM9xLUDfIxbCnM/view?usp=sharing)
 ```
--d market1501 -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/market1501-final-model/model_best.pth.tar
+python examples/main.py -d market1501 -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/market1501-final-model/model_best.pth.tar
 
--d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/model_best.pth.pth.tar
+python examples/main.py -d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/model_best.pth.pth.tar
 ```
 ## Results, trained and tested on single dataset (SD) setup.
 <table>
