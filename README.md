@@ -51,7 +51,7 @@ python examples/main.py -d market1501 -b 64 -a resnet101 --features 2048 --evalu
 
 python examples/main.py -d dukemtmc -b 64 -a resnet101 --features 2048 --evaluate --evaluate-from examples/logs/dukemtmc-final-model/model_best.pth.pth.tar
 ```
-## Results, trained and tested on single dataset (SD) setup.
+## Results, trained and tested on single dataset, SD setup.
 <table>
   <tr>
     <th></th>
