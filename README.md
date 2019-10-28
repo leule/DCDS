@@ -76,14 +76,11 @@ python examples/main.py -d dukemtmc -b 64 -a resnet101 --features 2048 --evaluat
 
 ## Citation
 ```
-@article{AlemuPelilloShahICCV19,
-  author    = {Leulseged Tesfaye Alemu and
-               Mubarak Shah and
-               Marcello Pelillo},
-  title     = {Deep Constrained Dominant Sets for Person Re-identification},
-  journal   = {arXiv: 1904.11397},
-  volume    = {abs/1904.11397},
-  year      = {2019},
-  url       = {http://arxiv.org/abs/1904.11397},
+@InProceedings{Alemu_2019_ICCV,
+author = {Alemu, Leulseged Tesfaye and Pelillo, Marcello and Shah, Mubarak},
+title = {Deep Constrained Dominant Sets for Person Re-Identification},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
 }
 ```
