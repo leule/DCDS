@@ -14,19 +14,19 @@ from torch.utils.data import DataLoader
 from torch.autograd import Variable
 
 
-from reid_oct16_2019 import datasets
-from reid_oct16_2019 import models
-from reid_oct16_2019.dist_metric import DistanceMetric
-from reid_oct16_2019.loss import TripletLoss
-from reid_oct16_2019.trainers import Trainer, DCDSBase
-from reid_oct16_2019.evaluators import Evaluator, CascadeEvaluator
-from reid_oct16_2019.utils.data import transforms as T
-from reid_oct16_2019.utils.data.preprocessor import Preprocessor
-from reid_oct16_2019.utils.data.sampler import RandomMultipleGallerySampler
-from reid_oct16_2019.utils.logging import Logger
-from reid_oct16_2019.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
-from reid_oct16_2019.models.embedding import VNetEmbed
-from reid_oct16_2019.models.fusion_branch import  VNetExtension # ***********************************
+from reid import datasets
+from reid import models
+from reid.dist_metric import DistanceMetric
+from reid.loss import TripletLoss
+from reid.trainers import Trainer, DCDSBase
+from reid.evaluators import Evaluator, CascadeEvaluator
+from reid.utils.data import transforms as T
+from reid.utils.data.preprocessor import Preprocessor
+from reid.utils.data.sampler import RandomMultipleGallerySampler
+from reid.utils.logging import Logger
+from reid.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
+from reid.models.embedding import VNetEmbed
+from reid.models.fusion_branch import  VNetExtension # ***********************************
 
 
 def get_data(name, split_id, data_dir, height, width, batch_size, num_instances,
