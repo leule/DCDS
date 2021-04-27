@@ -2,7 +2,7 @@
 Pytorch Implementation for our **ICCV2019** work, Deep Constrained Dominant Sets for Person Re-Identification.
 This implementation is based on [open-reid](https://github.com/Cysu/open-reid) and [kpm_rw_person_reid.](https://github.com/YantaoShen/kpm_rw_person_reid)
 
-### Requirements 
+#### Requirements 
 * [python 2.7](https://www.python.org/download/releases/2.7/) 
 * [PyTorch](https://pytorch.org/previous-versions/) (we run the code under version 0.3.0)
 * [metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)  
